@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phim Mới/Phim Hay/Xem phim</title>
+    <style>
+        .header {
+            border-bottom-style: solid;
+            border-color: rgb(248, 199, 38);
+        }
+
+        .container {
+            display: flex;
+            background-color: rgba(36, 36, 36, 0.603);
+        }
+
+        * {
+            margin: auto;
+            background-color: rgba(109, 107, 107, 0.671);
+            box-sizing: border-box;
+        }
+
+        .header-logo {
+            margin-right: 0px;
+
+        }
+
+        .logo {
+            text-decoration: none;
+            color: white;
+        }
+
+
+        .logo-phim {
+            border-radius: 100%;
+            vertical-align: middle;
+        }
+
+        span {
+            font-size: 40px;
+
+        }
+
+        .input-search {
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 300px;
+            height: 40px;
+            border-radius: 20px;
+        }
+
+        .searchsubmit {
+            border-radius: 100%;
+            width: 40px;
+            height: 40px;
+
+        }
+
+        .navigation {
+            max-width: 100%;
+            width: 1400px;
+        }
+
+        .list-main {
+            margin: auto;
+        }
+
+        .list {
+            display: inline;
+            margin-left: 20px;
+            font-size: 20px;
+            color: white;
+            position: relative;
+
+        }
+
+        .list-movie {
+            display: none;
+            position: absolute;
+            z-index: 10;
+            list-style-type: none;
+            background-color: black;
+            color: white;
+        }
+
+        .list:hover .list-movie {
+            display: inline;
+            width: 700px;
+            columns: 4;
+        }
+
+        .movie {
+            margin-top: 10px;
+        }
+
+        p {
+            padding: 40px 0px 20px 0px;
+            font-size: 30px;
+            color: rgb(248, 199, 38);
+            ;
+        }
+
+        .hot-movie {
+            display: flex;
+            border-style: solid;
+            border-width: 20px 5px;
+            background-color: rgba(36, 36, 36, 0.603);
+            border-color: rgba(36, 36, 36, 0.603);
+        }
+
+        .main {
+            max-width: 100%;
+            width: 1300px;
+        }
+
+        .trailer-list {
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+            width: 50%;
+            float: left;
+            height: 700px;
+        }
+
+        .trailer-list a {
+            margin-left: 0px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(123, 193, 240);
+
+        }
+
+        .trailer {
+            vertical-align: middle;
+        }
+        .week-movie{
+            display: flex;
+            flex-direction: column;
+            overflow: scroll;
+            width: 50%;
+            float: left;
+            height: 700px;
+        }
+        .week-movie a{
+            margin-left: 0px;
+            margin-bottom: 20px;
+            font-size: 20px;
+            text-decoration: none;
+            color: rgb(123, 193, 240);
+        }
+        .week{
+            vertical-align: middle;
+        }
+        .p{
+            display: flex; 
+        }
+ 
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header">
+            <div class="container">
+                <div class="header-logo"><a title="Xem phim mới chất lượng cao" href="http://www.phimmoizz.net/"
+                        class="logo"><img class="logo-phim"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ4vDs7zjpwJI5dP_RLsQWtVVxNe0p8hpMvoA&usqp=CAU"
+                            alt="" width="100px" height="100px"> <span>PHIMMOI.net</span>
+                    </a>
+                </div>
+                <div class="input-search">
+                    <form>
+                        <input type="text" name="keyword" placeholder="Tìm: teen phim, đạo diễn, diễn viên">
+                        <button class="searchsubmit"><img src="https://i.ytimg.com/vi/_NltVXqwGQw/maxresdefault.jpg"
+                                alt="" width="20px" height="20px"></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <nav>
+            <div class="navigation">
+                <ul class="list-main">
+                    <li class="list">PHIM MỚI ZZ</li>
+                    <li class="list">THỂ LOẠI
+                        <ul class="list-movie">
+                            <li class="movie">Phim hành động</li>
+                            <li class="movie">Phim hài hước</li>
+                            <li class="movie">Phim cổ trang</li>
+                            <li class="movie">Phim chính kịch - Drama</li>
+                            <li class="movie">Phim viễn tưởng</li>
+                            <li class="movie">Phim võ thuật</li>
+                            <li class="movie">Phim thần thoại</li>
+                            <li class="movie">Phim chiến tranh</li>
+                            <li class="movie">Phim kinh dị</li>
+                            <li class="movie">Phim tâm lý</li>
+                            <li class="movie">Phim gia đình</li>
+                            <li class="movie">Phim hình sự</li>
+                            <li class="movie">Phim tài liệu</li>
+                            <li class="movie">Phim hoạt hình</li>
+                            <li class="movie">Phim phiêu lưu</li>
+                            <li class="movie">Phim thể thao - Âm nhạc</li>
+                        </ul>
+                    </li>
+                    <li class="list">QUỐC GIA</li>
+                    <li class="list">PHIM LẺ</li>
+                    <li class="list">PHIM BỘ</li>
+                    <li class="list">PHIM THUYẾT MINH</li>
+                    <li class="list">PHIM CHIẾU RẠP</li>
+                    <li class="list">TRAILER</li>
+                    <li class="list">TOP IMDB 2019</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="main">
+            <section>
+
+                <p > PHIM ĐỀ CỬ</p>
+                <div class="hot-movie">
+                    <img src="https://www.cgv.vn/media/catalog/product/cache/1/image/1800x/71252117777b696995f01934522c402d/1/b/1bd4e194444eb910e05f_1_.jpg"
+                        alt="" class="hot" width="300px" height="400px" style="margin-right:0px ;">365
+                    <img src="https://photo-1-baomoi.zadn.vn/w700_r1/2020_08_22_105_36122055/fea18d721d31f46fad20.jpg"
+                        alt="" class="hot" width="300px" height="400px" style="margin-right:20px ; margin-left: 20px;">
+                    <img src="https://image.phimmoizz.net/film/11260/poster.medium.jpg" alt="" class="hot" width="300px"
+                        height="400px" style="margin-right:20px ; margin-left: 0px;">
+                    <img src="https://image.phimmoizz.net/film/11355/poster.medium.jpg" alt="" class="hot" width="300px"
+                        height="400px" style="margin-left:0px">
+                </div>
+            </section>
+            <div class="column">
+            <section>
+                <div class="p">
+                <p class="p1"> TRAILER PHIM MỚI</p>
+                <p class="p2">PHIM HOT TRONG TUẦN</p>
+                </div>
+                <div class="trailer-list">
+                    <a href="http://www.phimmoizz.net/phim/gia-dinh-chan-to-phieu-luu-ky-11290/"><img class="trailer"
+                            src="https://cdn02.ticketbox.vn/poster/06f84734-cc91-11ea-8541-0242ac110006" alt=""
+                            width="200px" height="300px">Gia Đình Chân To Phiêu Lưu Ký</a>
+                    <a href="http://www.phimmoizz.net/phim/da-quy-rung-sau-11300/"><img class="trailer"
+                            src="https://image.phimmoizz.net/film/11300/poster.medium.jpg" alt="" width="200px"
+                            height="300px">Giạ Quả Rừng Sâu</a>
+                    <a href="http://www.phimmoizz.net/phim/tenet-11048/"><img class="trailer"
+                            src="https://cdn.collider.com/wp-content/uploads/2020/07/tenet-august-release-poster-john-david-washington.jpeg"
+                            alt="" width="200px" height="300px">Tenet</a>
+                    <a href="http://www.phimmoizz.net/phim/thay-giao-phan-cong-11378/"> <img class="trailer"
+                            src="https://image.phimmoizz.net/film/11378/poster.medium.jpg" alt="" width="200px"
+                            height="300px">Thầy Giáo Phản Công</a>
+                    <a href="http://www.phimmoizz.net/phim/hoc-vien-am-nhac-11308/"><img class="trailer"
+                            src="https://image.phimmoizz.net/film/11308/poster.medium.jpg" alt="" width="200px"
+                            height="300px">Học Viên Âm Nhạc</a>
+                </div>
+ 
+            </section>
+            <article>
+              
+                <div class="week-movie">
+                    <a href=""><img
+                            src="https://i2.wp.com/vuviphimz.com/wp-content/uploads/2020/04/365-Ng%C3%A0y-Y%C3%AAu-Anh-365-Days-2020-poster.jpg"
+                            alt="" class="week" width="200px" height="300px">365 Ngày Yêu Anh</a>
+                    <a href=""><img
+                            src="https://image.i3cloud.bid/upload/2020/01/xemhdo.com-vuong-quoc-loai-khi-10204.jpg"
+                            alt="" class="week" width="200px" height="300px">Vương Quốc Loài Khỉ</a>
+                    <a href=""><img
+                            src="https://www.venuscinema.vn/uploaded/phim/so%20thu%20thoat%20e%20venuscinema.jpg"
+                            alt="" class="week" width="200px" height="300px">Sở Thú Thoát Ế</a>
+                    <a href=""><img src="https://upload.wikimedia.org/wikipedia/vi/0/03/Tenki_no_Ko_poster.jpg"
+                            alt="" class="week" width="200px" height="300px">Đứa Con Của Thời Tiết</a>
+                    <a href=""><img
+                            src="https://upload.wikimedia.org/wikipedia/en/1/18/Venom_%282018_film_poster%29.png"
+                            alt="" class="week" width="200px" height="300px">Quái Vật Venom</a>
+                </div>
+            </article>
+        </div>
+        </div>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>
