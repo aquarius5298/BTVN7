@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Bai1
+        function getCurrentDate (str) {
+    var date = new Date();
+    var data =  date.getDate() + str +  date.getMonth() + str + date.getFullYear();
+return data;}
+console.log(getCurrentDate ("/"));
+        //Bai2
+        function getDaysInMonth(mth,year) {
+            var date = new Date(year,mth);
+            var data = date.getDate();
+            return data;
+        }
+        console.log(getDaysInMonth(8,2020));
+        //Bai3
+        function getDayabc(day,month,year) {
+            var date = new Date(year,month,day);
+            var data = date.getDay();
+            if (data == 0 || data == 6) {
+                return true
+            }return false
+        }console.log(getDayabc(14,08,2020));
+        //Bai4
+
+    </script>
+</body>
+</html>
