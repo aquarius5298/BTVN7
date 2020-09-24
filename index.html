@@ -5,41 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        canvas{
-           
-            background-color: red;
-        }
     </style>
 </head>
 <body>
-    <canvas id = 'canvas' width="700" height="400"></canvas>
+    <canvas id = 'canvas' width="1000" height="600"></canvas>
     <script>
-        const canvas = document.getElementById('canvas')
-        const ctx = canvas.getContext('2d')
+    const canvas = document.getElementById('canvas');
+    const ctx = canvas.getContext('2d');
 
-        ctx.beginPath();
-        ctx.moveTo(350,50)
-        ctx.lineTo(310,150)
-        ctx.lineTo(202.3,150)
-        ctx.lineTo(286.3,212)
-        ctx.lineTo(247.3,310)
-        ctx.lineTo(350,250)
-        ctx.fillStyle = 'yellow'
-        ctx.strokeStyle = ' yellow'
-        ctx.fill()
-        ctx.stroke()
+    ctx.beginPath();
+    ctx.fillStyle = 'yellow'
+    ctx.strokeStyle = 'white'
+    ctx.arc(500,300,250,0,Math.PI * 2,false)
+    ctx.fill()
+    ctx.stroke()
 
-       ctx.beginPath();
-        ctx.moveTo(350,50)
-        ctx.lineTo(390,150)
-        ctx.lineTo(497.7,150)
-        ctx.lineTo(413.7,212)
-        ctx.lineTo(452.7,310)
-        ctx.lineTo(350,250)
-         ctx.fillStyle = 'yellow'
-         ctx.strokeStyle = ' yellow'
-        ctx.fill()
-        ctx.stroke() 
+    ctx.beginPath();
+    ctx.fillStyle = 'blue'
+    ctx.rect(970/3,1430/3-353.5533906,353.5533906,353.5533906)
+    ctx.fill()
+
+    ctx.beginPath();
+    ctx.fillStyle = 'green'
+    ctx.strokeStyle = 'green'
+    ctx.arc(500,300,353.5533906/2,0,Math.PI * 2,false)
+    ctx.fill()
+    ctx.stroke()
+
+    ctx.beginPath();
+    ctx.fillStyle = 'orange'
+    ctx.rect(375.7,123.6113276+50,353.5533906/Math. sqrt(2),353.5533906/Math. sqrt(2))
+    ctx.fill()
+
+    ctx.beginPath();
+    ctx.fillStyle = 'white'
+    ctx.strokeStyle = 'white'
+    ctx.arc(500,300,353.5533906/(Math. sqrt(2)*2),0,Math.PI * 2,false)
+    ctx.fill()
+    ctx.stroke()
     </script>
 </body>
 </html>
